@@ -7,19 +7,21 @@ directive @Service on FIELD_DEFINITION
 type Hello {
 	test: String
 	asdf: String
-	qwertt(InputName: Integer): String
 }
 input HelloInput {
 	test: String
 	asdf: String
-	qwertt(InputName: Integer): String
 }
 type Mutation {
 	serviceTestM(in: HelloInput): Hello
 	queryMutate1(in: HelloInput): Hello @DirName(ParamName: ExampleText)
 }
+type OutHello {
+	asdf: String
+	qwertt(InputName: Int): String
+}
 type Query {
-	serviceTestQ(in: HelloInput): Hello
+	serviceTestQ(in: HelloInput): OutHello
 	"""
 	 must be a query
 	
