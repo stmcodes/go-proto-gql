@@ -54,7 +54,7 @@ message Parameter {
 enum ParameterType {
     Variable = 0;
     String = 1;
-    Integer = 2;
+    Int = 2;
     Float = 3;
     Block = 4;
     Boolean = 5;
