@@ -1,2 +1,0 @@
-#!/bin/sh
-go run ~/Projects/go-proto-gql/protoc-gen-gogql/main.go
